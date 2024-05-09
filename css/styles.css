@@ -232,13 +232,13 @@ footer{
     place-content: center;
 }
 .servicios__work:first-child{
-    background-image: linear-gradient(#0009,#0009),url(/assets/moda/moda-10.jpg);
+    background-image: linear-gradient(#0009,#0009),url(../assets/moda/moda-10.jpg);
 }
 .servicios__work:nth-child(2){
-    background-image: linear-gradient(#0009,#0009),url(/assets/eventos/DSC_2066-Mejorado-NR.jpg);
+    background-image: linear-gradient(#0009,#0009),url(../assets/eventos/music-7.jpg);
 }
 .servicios__work:last-child{
-    background-image: linear-gradient(#0009,#0009),url(/assets/fotoproducto/bebidas/red-label2.jpg);
+    background-image: linear-gradient(#0009,#0009),url(../assets/fotoproducto/bebidas/red-label2.jpg);
 }
 .servicios__work:hover{
     opacity: 0.75;
