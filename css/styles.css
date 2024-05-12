@@ -5,7 +5,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
 body{
     max-width: 1920vh;
     font-family: 'Montserrat Alternates';
@@ -24,12 +23,9 @@ body, div, ul, nav, header, footer, a, li, label {
 
 header {
     background-color:#062444;
-    display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 1rem;
-    container-type: inline-size;
-    container-name: header;
 }
 .header__logo{
     max-width: 100%;
@@ -122,6 +118,7 @@ footer a{
     height: auto;
 }
 
+/*---------------INDEX END---------------*/
 /*---------------PORTFOLIO STYLE---------------*/
 
 .portfolio__title{
@@ -206,8 +203,9 @@ footer a{
     grid-row: 4/ span 1;
 }
 
-
+/*---------------PORTFOLIO END---------------*/
 /*---------------SERVICIOS STYLE---------------*/
+
 .servicios__title{
     font-size: 2rem;
 }
@@ -218,8 +216,6 @@ footer a{
     display: flex;
     flex-direction: column;
     text-align: center;
-    container-name: servicios;
-    container-type: inline-size;
     justify-content: space-evenly;
 }
 .servicios__works-container{
@@ -252,7 +248,7 @@ footer a{
     outline: 2px solid #ffa600;
 }
 
-
+/*---------------SERVICIOS END---------------*/
 /*---------------CONTACTO STYLE---------------*/
 
 .form{
@@ -261,8 +257,6 @@ footer a{
     flex-direction: column;
     align-items: center;
     padding: 30px 0;
-    container-name: form;
-    container-type: inline-size;
     margin-bottom: 11.4rem;
 }
 .form__container{
@@ -296,7 +290,9 @@ footer a{
     font-size: 2.5rem;
 }
 
+/*---------------CONTACTO END---------------*/
 /*---------------ABOUT ME STYLE---------------*/
+
 .aboutme{
     margin-top: 2rem;
 }
@@ -317,6 +313,8 @@ footer a{
     margin-bottom: 2rem;
     border-radius: 12px;
 }
+/*---------------ABOUT ME END---------------*/
+/*---------------MEDIA QUERIES---------------*/
 
 /*mobile*/
 @media screen and (min-width: 320px) and (max-width: 767px){
@@ -351,7 +349,9 @@ footer a{
         margin-right: 2rem;        
     }
 }
+
 /*tablet*/
+
 @media screen and (min-width: 768px) and (max-width: 1023px){
     .portfolio{
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -384,6 +384,7 @@ footer a{
     }
     
 }
+
 /*desktop*/
 
 @media screen and (min-width: 1024px){
@@ -451,35 +452,5 @@ footer a{
     .servicios__work:nth-child(6){
         grid-column: span 4;
     }
-    .form__container{
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: 
-        "name lastname"
-        "email email"
-        "message message"
-        "button button";
-        gap: 12px;
-        background-image: linear-gradient(#062444, transparent);
-        padding: 30px;
-        border-radius: 12px;
-        box-shadow: 0px 0px 25px #1477e0;
-    }
-    .form__input:first-child{
-        grid-area: name;
-    }
-    .form__input:nth-child(2){
-        grid-area: lastname;
-    }
-    .form__input:nth-child(3){
-        grid-area: email;
-    }
-    .form__input:nth-child(4){
-        grid-area: message;
-    }
-    .form__input:nth-child(5){
-        grid-area: button;
-    }
-    .form__input :is(input,textarea){
-        box-shadow: none;
-    }
+    
 }
