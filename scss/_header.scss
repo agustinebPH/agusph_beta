@@ -1,0 +1,31 @@
+/*---------------HEADER STYLE---------------*/
+@import 'colores';
+header {
+    background-color: $azulOscuro;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    .header__logo{
+        max-width: 100%;
+        width: 3.2rem;
+        margin: 1rem 2rem;
+    }
+    .header__nav {
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header__nav-list{
+        margin: auto;
+        gap: 2rem;
+    }
+    
+    .header__nav-item{
+        list-style: none;
+        a{
+            color: $amarillo;
+            text-decoration: none;
+        }
+    }
+}
+
+/*---------------HEADER END---------------*/

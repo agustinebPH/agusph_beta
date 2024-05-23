@@ -1,0 +1,18 @@
+@import 'colores';
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 1920vh;
+    font-family: 'Montserrat Alternates';
+    font-size: 62.5%;
+    background-color: $fondo;
+    color: $blanquito;
+    
+    div, ul, nav, header, footer, a, li, label {
+        margin: 0;
+        padding: 0;
+    }
+}
