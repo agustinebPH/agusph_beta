@@ -1,10 +1,11 @@
 /*---------------CONTACTO STYLE---------------*/
 @import 'colores';
+@import 'animations';
 
 .form__title{
     text-align: center;
     margin-top: 1.5rem;
-    margin-bottom: -2rem;
+    margin-bottom: -2rem; 
 }
 
 .form{
@@ -15,10 +16,11 @@
     align-items: center;
     margin-bottom: 11.4rem;
     width: 100%;
+    animation: appear 4s -.10s both;
 
     .form__title{
         font-weight: 500;
-        font-size: 2rem;
+        font-size: 3rem;
     }
 
     .form__container{

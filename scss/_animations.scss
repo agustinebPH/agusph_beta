@@ -1,0 +1,21 @@
+@import 'colores';
+
+@keyframes header-animation{
+    from {
+        padding: 10px 0;
+        background-color: $azulOscuro;
+    }
+    to{
+        padding: 10px 0;
+        background-color: #ffa60080;
+    }
+}
+
+@keyframes appear{
+    from {
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

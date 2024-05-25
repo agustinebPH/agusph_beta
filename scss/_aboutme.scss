@@ -1,5 +1,6 @@
 /*---------------ABOUT ME STYLE---------------*/
 @import 'colores';
+@import 'animations';
 
 .aboutme{
     margin-top: 2rem;
@@ -14,6 +15,7 @@
         border-radius: 8px;
         text-align: justify;
         text-wrap: pretty;
+        animation: appear 4s -.10s both;
         
         .aboutme__img{
             margin-bottom: 2rem;
