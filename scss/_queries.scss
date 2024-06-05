@@ -10,6 +10,11 @@
         position: sticky;
         top: 0;
         z-index: 10;
+        .header__logo{
+            max-width: 100%;
+            width: 3rem;
+            margin: 0;
+        }
     }
     .intro__aboutme{
         display: flex;
@@ -27,6 +32,20 @@
             max-width: 100%;
             width: 480px;
         }
+    }
+    .portfolio{
+        display: block;
+        padding: 20px;
+
+        .portfolio__photo{
+            margin-bottom: 1rem;
+        }
+    }
+    .portfolio__title{
+        margin-top: 0.2rem;
+        margin-bottom: 0;
+        text-align: center;
+        font-size: 2rem;
     }
 }
 

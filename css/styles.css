@@ -8,7 +8,6 @@
   }
   to {
     padding: 10px 0;
-    background-color: rgba(255, 166, 0, 0.5019607843);
   }
 }
 @keyframes appear {
@@ -37,13 +36,14 @@
 .aboutme .aboutme__container .aboutme__img {
   margin-bottom: 2rem;
   border-radius: 12px;
+  width: 480px;
 }
 .aboutme .aboutme__container .aboutme__data-container {
   max-width: 600px;
   padding: 2rem;
 }
 .aboutme .aboutme__container .aboutme__description {
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 /*---------------ABOUT ME END---------------*/
@@ -54,7 +54,6 @@
   }
   to {
     padding: 10px 0;
-    background-color: rgba(255, 166, 0, 0.5019607843);
   }
 }
 @keyframes appear {
@@ -72,7 +71,6 @@
   }
   to {
     padding: 10px 0;
-    background-color: rgba(255, 166, 0, 0.5019607843);
   }
 }
 @keyframes appear {
@@ -107,7 +105,6 @@ body div, body ul, body nav, body header, body footer, body a, body li, body lab
   }
   to {
     padding: 10px 0;
-    background-color: rgba(255, 166, 0, 0.5019607843);
   }
 }
 @keyframes appear {
@@ -139,7 +136,6 @@ header .header__logo {
   }
   to {
     padding: 10px 0;
-    background-color: rgba(255, 166, 0, 0.5019607843);
   }
 }
 @keyframes appear {
@@ -268,7 +264,6 @@ header .header__logo {
   }
   to {
     padding: 10px 0;
-    background-color: rgba(255, 166, 0, 0.5019607843);
   }
 }
 @keyframes appear {
@@ -335,7 +330,6 @@ header .header__logo {
   }
   to {
     padding: 10px 0;
-    background-color: rgba(255, 166, 0, 0.5019607843);
   }
 }
 @keyframes appear {
@@ -358,7 +352,6 @@ header .header__logo {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 11.4rem;
   width: 100%;
   animation: appear 4s -0.1s both;
 }
@@ -389,7 +382,7 @@ header .header__logo {
   font-family: inherit;
 }
 .form .form__container .row :is(input, textarea) input[type=submit] {
-  width: 100%;
+  width: 50%;
   padding: 12px;
   background-color: #062444;
   color: #e6e6e6;
@@ -403,7 +396,6 @@ header .header__logo {
   }
   to {
     padding: 10px 0;
-    background-color: rgba(255, 166, 0, 0.5019607843);
   }
 }
 @keyframes appear {
@@ -415,10 +407,14 @@ header .header__logo {
   }
 }
 footer {
-  margin-top: 2rem;
+  margin-top: auto;
   text-align: center;
   background-color: #062444;
   font-size: 1rem;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
 footer a {
   text-decoration: none;
@@ -432,7 +428,6 @@ footer a {
   }
   to {
     padding: 10px 0;
-    background-color: rgba(255, 166, 0, 0.5019607843);
   }
 }
 @keyframes appear {
@@ -453,6 +448,11 @@ footer a {
     top: 0;
     z-index: 10;
   }
+  header .header__logo {
+    max-width: 100%;
+    width: 3rem;
+    margin: 0;
+  }
   .intro__aboutme {
     display: flex;
     padding: auto;
@@ -469,6 +469,19 @@ footer a {
   .aboutme__container .aboutme__img {
     max-width: 100%;
     width: 480px;
+  }
+  .portfolio {
+    display: block;
+    padding: 20px;
+  }
+  .portfolio .portfolio__photo {
+    margin-bottom: 1rem;
+  }
+  .portfolio__title {
+    margin-top: 0.2rem;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 2rem;
   }
 }
 /*tablet*/
@@ -555,22 +568,28 @@ h1 {
   color: #1477e0;
 }
 
+.wrapper {
+  flex: 1;
+}
+
 .intro__wrapper {
   text-align: center;
   text-wrap: pretty;
   animation: appear 4s -0.1s both;
+  align-items: center;
 }
-.intro__wrapper .carousel {
-  margin-bottom: 2rem;
-}
-.intro__wrapper .carousel .carousel-inner {
+.intro__wrapper .carousel-inner {
   max-height: 72rem;
   overflow: hidden;
   margin-bottom: 2rem;
   border: solid transparent;
-  border-radius: 12px;
 }
-.intro__wrapper .intro__aboutme {
+.intro__wrapper .carousel-inner .carousel-item img {
+  width: 50%;
+  height: auto;
+}
+
+.intro__aboutme {
   max-width: 72rem;
   margin: auto;
   padding: 1.5rem;
@@ -580,14 +599,14 @@ h1 {
   justify-content: center;
   align-items: center;
 }
-.intro__wrapper .intro__aboutme .intro__texto {
-  font-size: 1.5rem;
+.intro__aboutme .intro__texto {
+  font-size: 1rem;
 }
-.intro__wrapper .intro__aboutme h2 {
+.intro__aboutme h2 {
   font-size: 2rem;
   color: #1477e0;
 }
-.intro__wrapper .intro__aboutme p {
+.intro__aboutme p {
   color: #e6e6e6;
   text-align: justify;
   text-wrap: pretty;

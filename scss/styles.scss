@@ -15,22 +15,29 @@
 h1{
     color:$azulClaro;
 }
+
+.wrapper{
+    flex: 1;
+}
+
 .intro__wrapper{
     text-align: center;
     text-wrap: pretty;
     animation: appear 4s -.10s both;
+    align-items: center;
     
-    .carousel{
+    .carousel-inner{
+        max-height: 72rem;
+        overflow: hidden;
         margin-bottom: 2rem;
+        border: solid transparent;
 
-        .carousel-inner{
-            
-            max-height: 72rem;
-            overflow: hidden;
-            margin-bottom: 2rem;
-            border: solid transparent;
-            border-radius: 12px;
+        .carousel-item img{
+            width: 50%;
+            height: auto;
         }
+        }
+
     }
     .intro__aboutme{
         max-width: 72rem;
@@ -43,7 +50,7 @@ h1{
         align-items: center;
         
         .intro__texto{
-            font-size: 1.5rem;
+            font-size: 1rem;
         }
         h2{
             font-size: 2rem;
@@ -55,7 +62,8 @@ h1{
             text-wrap: pretty;
         }
     }
-}
+
+
 
 /*---------------INDEX END---------------*/
 

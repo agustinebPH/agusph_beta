@@ -1,11 +1,15 @@
 @import 'colores';
 @import 'animations';
+
 footer{
-    margin-top: 2rem;
+    margin-top: auto;
     text-align: center;
     background-color: $azulOscuro;
     font-size: 1rem;
-    
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
     a{
     text-decoration: none;
 }
