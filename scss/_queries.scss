@@ -16,6 +16,31 @@
             margin: 0;
         }
     }
+
+    .wrapper{
+        flex: 1;
+    }
+    
+    .intro__wrapper{
+        text-align: center;
+        text-wrap: pretty;
+        animation: appear 4s -.10s both;
+        align-items: center;
+        
+        .carousel-inner{
+            max-height: 72rem;
+            overflow: hidden;
+            margin-bottom: 2rem;
+            border: solid transparent;
+    
+            .carousel-item img{
+                width: 100%;
+                height: auto;
+            }
+            }
+    
+        }
+
     .intro__aboutme{
         display: flex;
         padding: auto;
@@ -61,6 +86,30 @@
         top: 0;
         z-index: 10;
     }
+
+    .wrapper{
+        flex: 1;
+    }
+    
+    .intro__wrapper{
+        text-align: center;
+        text-wrap: pretty;
+        animation: appear 4s -.10s both;
+        align-items: center;
+        
+        .carousel-inner{
+            max-height: 72rem;
+            overflow: hidden;
+            margin-bottom: 2rem;
+            border: solid transparent;
+    
+            .carousel-item img{
+                width: 75%;
+                height: auto;
+            }
+            }
+    
+        }
     .aboutme__container{
         display: flex;
         flex-direction: row;
@@ -105,10 +154,30 @@ header{
     top: 0;
     z-index: 10;
 }
+.wrapper{
+    flex: 1;
+}
+
 .intro__wrapper{
-        flex-direction: column;
-        padding: 1rem;
+    text-align: center;
+    text-wrap: pretty;
+    animation: appear 4s -.10s both;
+    align-items: center;
+    
+    .carousel-inner{
+        max-height: 72rem;
+        overflow: hidden;
+        margin-bottom: 2rem;
+        border: solid transparent;
+
+        .carousel-item img{
+            width: 50%;
+            height: auto;
+        }
+        }
+
     }
+
 .form__title{
         text-align: center;
         margin-top: 1.5rem;

@@ -5,7 +5,7 @@
 .portfolio {
     margin: auto;
     animation: appear 5s -.3s both;
-    
+    margin-bottom: 50rem;
 }
 
 .portfolio__title{
@@ -97,3 +97,13 @@
 }
 
 /*---------------PORTFOLIO END---------------*/
+
+.portfolio__photo{
+    transition: transform 0.3s ease;
+}
+
+.portfolio__photo:hover{
+    transform: scale(1.1);
+    opacity: 1;
+    z-index: 30;
+}
