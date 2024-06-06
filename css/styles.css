@@ -262,7 +262,7 @@ header .header__logo {
 }
 
 .portfolio__photo:hover {
-  transform: scale(1.1);
+  transform: scale(1.02);
   opacity: 1;
   z-index: 30;
 }
